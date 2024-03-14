@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="icon" href="librairie.png">
+    <title>MaLibrairie</title>
+</head>
+    <body>
+        <div class="background">
+            <header class="menu">
+                <a href="/"><img class="logo" src="librairie.png"></a>
+                <!-- barre de recherche !-->
+                <div class="search">
+                    <input type="text" placeholder="Rechercher une série, un auteur..." name="search">
+                    <button type="submit">
+                        <i><img src="loupe.png" alt="Rechercher" width="30px"></i>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="/panier">Panier</a></li>
+                    <li><a href="/compte">Compte</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/apropos">A propos</a></li>
+                </ul>
+            </header>
+            <div class = "back">
+                <p>Se connecter</p>
+                <form method="post" action="/connect">
+                    <label>Email</label>
+                    <br>
+                    <input type="text" id ="mail" name="mail">
+                    <br>
+                    <label>Mot de passe</label>
+                    <br>
+                    <input type="text" id="passwd" name="passwd">
+                    <br>
+                    <input type="submit">
+                <p>Pas encore de compte ?</p>
+                <a href="/create">Créer un compte</a>
+                </form>
+            </div>
+
+        </div>
+    </body>
+</html>

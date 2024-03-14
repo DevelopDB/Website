@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="icon" href="librairie.png">
+    <title>MaLibrairie</title>
+</head>
+    <body>
+        <div class="background">
+            <header class="menu">
+                <a href="#"><img class="logo" src="librairie.png"></a>
+                <!-- barre de recherche !-->
+                <div class="search">
+                    <input type="text" placeholder="Rechercher une série, un auteur..." name="search">
+                    <button type="submit">
+                        <i><img src="loupe.png" alt="Rechercher" width="30px"></i>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="/panier">Panier</a></li>
+                    <li><a href="/compte">Compte</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/apropos">A propos</a></li>
+                </ul>
+            </header>
+            <div class="back">
+                <%= msg %>
+                <p>Ajouter une nouvelle série</p>
+                <form action="/ajout" method="post">
+                    <br>
+                    <input type="text" id="title" name="title" placeholder="Titre">
+                    <br>
+                    <input type="text" id="author" name="author" placeholder="Author">
+                    <br>
+                    <input type="text" id="isbn" name="isbn" placeholder="ISBN">
+                    <br>
+                    <input type="text" id="type" name="type" placeholder="Type">
+                    <br>
+                    <input type="number" id="year" name="year" placeholder="Year">
+                    <br>
+                    <input type="text" id="editor" name="editor" placeholder="Editor">
+                    <br>
+                    <input type="number" id="pages" name="pages" placeholder="Pages">
+                    <br>
+                    <input type="text" id="description" name="description" placeholder="Description">
+                    <br>
+                    <input type="number" id="price" name="price" placeholder="Price">
+                    <br>
+                    <input type="file" id="cover" name="cover">
+                    <br>
+                    <input type="submit">
+                    <br>
+                </form>
+                <p>Gérer les stocks</p>
+            </div>
+        </div>
+    </body>
+</html>
